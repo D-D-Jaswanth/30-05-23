@@ -1,38 +1,73 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Playfair', 'Poppins', sans-serif;
+}
+#root{
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  margin: 4%;
+  padding: 1%;
+}
+.fav{
   text-align: center;
+  background: #fff;
+  padding-top: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  margin-top: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header>div{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+}
+.header>div h1{
+  font-size: 2.5rem;
+  font-family: 'Playfair';
+}
+.header>div h3{
+  font-size: 2.1rem;
+  font-family: 'Playfair';
+}
+.header img{
+  height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.body h3{
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+.body p{
+  margin-top: 2%;
+  font-size: 1.2rem;
+  padding: 0 4%;
+  line-height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body h4{
+  margin-top: 20px;
+}
+
+.body li{
+  line-height: 30px;
+}
+.body li a{
+  text-decoration: none;
+}
+.body li a:hover{
+  text-decoration: underline;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 5%;
+  padding: 2% 0;
 }
